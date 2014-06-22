@@ -63,6 +63,7 @@ static char *okgoos[] = {
 	"openbsd",
 	"plan9",
 	"windows",
+	"freertos",
 };
 
 static void rmworkdir(void);

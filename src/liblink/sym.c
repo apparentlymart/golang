@@ -56,6 +56,7 @@ static struct {
 	"solaris",	Hsolaris,
 	"windows",	Hwindows,
 	"windowsgui",	Hwindows,
+	"freertos", Helf,
 	0, 0
 };
 
@@ -137,6 +138,7 @@ linknew(LinkArch *arch)
 	case Hopenbsd:
 	case Hdragonfly:
 	case Hsolaris:
+	case Helf:
 		/*
 		 * ELF uses TLS offset negative from FS.
 		 * Translate 0(FS) and 8(FS) into -16(FS) and -8(FS).
